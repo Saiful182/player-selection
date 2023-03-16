@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 30px 60px 0 60px;
+}
+
+.header-banner img {
+    height: 360px;
+    width: 200px;
+}
+
+.banner-title {
+    text-align: center;
+}
+
+.header-banner h3 {
+    font: 76px Berkshire Swash normal;
+    color: #FF5E19;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 100px;
+
+
+}
+
+.header-banner p {
+    color: aliceblue;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.main-content {
+    background-color: #CFCFCF;
+    padding: 50px 30px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+}
+
+.player-card {
+    text-align: center;
+    height: max-content;
+    background-color: black;
+}
+
+.player-card h4 {
+    color: #CFCFCF;
+    padding: 10px 0px;
+}
+
+.player-card img {
+    height: 180px;
+    width: 100%;
+}
+
+.card-button {
+    width: 220px;
+    height: 40px;
+    background-color: blue;
+    color: #CFCFCF;
+    margin: 20px 0;
+    border: none;
+}
+
+.selected-players,
+.budget-calculation {
+    background-color: black;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    color: #CFCFCF;
+    text-align: center;
+
+}
+
+.selected-players h3,
+.budget-calculation h3 {
+    color: #CFCFCF;
+
+}
+
+.selected-players img,
+.budget-calculation img {
+    height: 30px;
+    width: 90px;
+}
+
+.players-price-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.players-price-input input {
+    background-color: black;
+    color: #CFCFCF;
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.players-price-input p {
+    margin: 10px;
+}
+
+.orderd-list {
+    width: 30%;
+    margin: 0 auto;
+}

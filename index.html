@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Selection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="header-banner">
+                <img src="image/Messi_banner-removebg-preview.png" alt="">
+                <div class="banner-title">
+                    <h3>Select Your Best Five</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <img src="image/Mbappe-banner.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="main-content">
+            <section class="content-box">
+                <section id="parents" class="player-cards">
+                    <div class="player-card">
+
+                        <img src="image/Messi.jpeg" alt="">
+                        <div class="card-text">
+                            <h4 id="messi">Messi</h4>
+                            <button id="messi-button" class="card-button">Select</button>
+                        </div>
+                    </div>
+                    <div class=" player-card">
+                        <img src="image/Dmaria.jpg" alt="">
+                        <h4 id="dmaria">D-Maria</h4>
+                        <button id="dmaria-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/donrumma.jpeg" alt="">
+                        <h4 id="donnoromma">Donnoromma</h4>
+                        <button id="donrumma-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/Hakimi.jpeg" alt="">
+                        <h4 id="hakimi">A.Hakimi</h4>
+                        <button id="hakimi-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/ibra.jpeg" alt="">
+                        <h4 id="ibra">Ibra</h4>
+                        <button id="ibra-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/Mbappe.jpg" alt="">
+                        <h4 id="mbappe">Mbappe</h4>
+                        <button id="mbappe-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/navas.jpeg" alt="">
+                        <h4 id="navas">Navas</h4>
+                        <button id="navas-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/Neymar.jpg" alt="">
+                        <h4 id="neymar">Neymar</h4>
+                        <button id="neymar-button" class="card-button"> Select</button>
+                    </div>
+                    <div class="player-card">
+                        <img src="image/ramos.jpeg" alt="">
+                        <h4 id="ramos">S.Ramos</h4>
+                        <button id="ramos-button" class="card-button"> Select</button>
+                    </div>
+                </section>
+                <section class="calculation-part">
+                    <section class="selected-players">
+                        <h3>Selected-V</h3>
+                        <img src="image/red_line-removebg-preview.png" alt="">
+                        <ol id="orderded-list" class="orderd-list">
+
+                        </ol>
+                    </section>
+                    <section class="budget-calculation">
+                        <h3>Budget</h3>
+                        <img src="image/red_line-removebg-preview.png" alt="">
+
+                        <div class="players-price-input">
+                            <p>Per Player</p>
+                            <input id="per-player-cost" type="text">
+                        </div>
+                        <button id="calculte-button" class="card-button">Calculte</button>
+                        <p>Player Expences: $<span>00</span></p>
+                        <div class="players-price-input">
+                            <p>Manager</p>
+                            <input type="text">
+                        </div>
+                        <div class="players-price-input">
+                            <p>Coach</p>
+                            <input type="text">
+                        </div>
+                        <button class="card-button">Calculte Total</button>
+                        <p>Total: $<span>00</span></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+</body>
+<script src="css/JS/function.js"></script>
+<script src="css/JS/calculation.js"></script>
+
+</html>
