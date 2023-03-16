@@ -1,14 +1,12 @@
 function getInputValue(inputId) {
     const inputValueString = document.getElementById(inputId);
-    const inputValue = inputValueString.value;
-    const inputDigits = parseFloat(inputValue);
-    return inputDigits.toFixed(2);
+    const inputDigits = parseInt(inputValueString.value);
+    return inputDigits;
 }
 function getInnerTextValue(inputId) {
     const innetTextString = document.getElementById(inputId);
-    const innerTextValue = innetTextString.innerText;
-    const innerTextDigits = parseFloat(innerTextValue);
-    return innerTextDigits.toFixed(2);
+    const innerTextDigits = parseInt(innetTextString.innerText);
+    return innerTextDigits;
 }
 
 document.getElementById('calculte-button').addEventListener('click', function () {
@@ -29,12 +27,7 @@ document.getElementById('calculate-total-button').addEventListener('click', func
     const totalPlayerExpence = getInnerTextValue('player-expences');
     const managerExpence = getInputValue('manager');
     const coachExpence = getInputValue('coach');
-
-    if (isNaN(totalPlayerExpence && managerExpence && coachExpence)) {
-        const totalCosting = totalPlayerExpence + managerExpence + coachExpence;
-        document.getElementById('total').innerText = totalCosting;
-    }
-    else {
-        alert('please type any valid number in the box')
-    }
+    console.log(totalPlayerExpence, managerExpence, coachExpence);
+    const totalCosting = totalPlayerExpence + managerExpence + coachExpence;
+    document.getElementById('total').innerText = parseFloat(totalCosting);
 })
